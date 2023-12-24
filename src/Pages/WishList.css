@@ -1,0 +1,97 @@
+.wishListImage{
+    width: 200px;
+    height: 112.5px;
+}
+.wishListContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.listItem{
+    width: 60%;
+    height: 140px;
+    padding-top: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    display: flex;
+    padding-left: 10px;
+    background-color: rgb(34, 33, 33);
+}
+
+.wishListGameNameButtonContainer{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.wishListGameNameButtonContainer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+.wishListName{
+    margin-bottom: 20px;
+}
+.wishListRemoveButton{
+    color: white;
+    background-color: rgb(165, 158, 158);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+.wishListAll{
+    background-image: url(./Img/wishlistbackground.jpg);
+    background-size: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    padding-top: 70px;
+}
+.emptyWishlist{
+    min-height: 90vh;
+    font-size: 18px;
+    font-weight: 600;
+}
+.wishListGameName{
+    color: white;
+    text-decoration: none;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .listItem {
+      width: 90%; 
+      flex-direction: column; 
+      height: auto; 
+      padding-left: 0; 
+    }
+  
+    .wishListGameNameButtonContainer {
+      margin-left: 0; 
+      width: 100%; 
+    }
+  
+    .wishListGameNameButtonContainer2 {
+      margin-bottom: 10px; 
+    }
+  
+    .wishListRemoveButton {
+      margin-top: 20px; 
+    }
+    
+    .wishlist-container{
+        margin-top: 26vh;
+    }
+    .wishListImage{
+        width: 130px;
+        height: 70px;
+    }
+    .wishListGameName{
+        margin-top: 5px;
+    }
+    .wishListPrice{
+        position: relative;
+        right: 10px;
+        bottom: 78px;
+    }
+  }

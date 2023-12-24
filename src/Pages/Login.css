@@ -1,0 +1,120 @@
+.container {
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 400px;
+    height: 40px;
+    outline-color: rgb(151, 11, 151);
+  }
+  
+  .button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .registrationContainer{
+    background-image: url(./Img/Playstation-Wallpapers.jpg);
+    height: 100vh;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .loginContainer{
+    background-image: url(./Img/loginBackground.png);
+    background-size: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .login{
+    color: #4caf50;
+    margin-bottom: 20px;
+    font-size: 34px;
+  }
+  .loginEmail, .loginPassword{
+    color: rgb(0, 224, 224);
+  }
+  .questionAccount1{
+    margin-top: 5px;
+    color: rgb(211, 59, 59);
+  }
+  .registerButton{
+    background-color: rgb(207, 127, 229);
+    color: rgb(68, 3, 66);
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+  }
+  .register{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 34px;
+  }
+  .registrationEmail, .registrationPassword{
+    color: white;
+  }
+  .questionAccount2{
+    margin-top: 5px;
+    color: rgb(96, 202, 255);
+  }
+  .loginButton{
+    background-color: rgb(102, 193, 198);
+    color: rgb(9, 13, 45);
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+  }
+  .firstAndLastNameContainer{
+    display: flex;
+    text-align: left;
+  }
+  .firstName, .lastName{
+    padding: 8px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 40px;
+  }
+  .firstName{
+    margin-right: 15px;
+  }
+  .registrationFirstName, .registrationLastName{
+    color: white;
+  }

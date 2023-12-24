@@ -1,0 +1,64 @@
+.payContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .payLeftContainer {
+    width: 60%;
+  }
+  
+  .cardDetailsContainer {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .payImage {
+    width: 100%;
+  }
+  .payInput{
+    padding: 10px;
+    height: 30px;
+    outline: none;
+  }
+.cardNumber{
+    width: 342px;
+    margin-bottom: 10px;
+}
+.enterCardInformation{
+    margin-bottom: 30px;
+}
+.orderAmount{
+    color: rgb(185, 179, 179);
+}
+.payOrRefuse{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+.payOrRefuse button{
+    width: 120px;
+    height: 35px;
+}
+.payButton{
+    background-color: rgb(118, 225, 3);
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.refuseButton{
+    font-size: 16px;
+    border: 0;
+    color: white;
+    background-color: rgb(175, 168, 168);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cvc, .mY{
+    width: 166px;
+}

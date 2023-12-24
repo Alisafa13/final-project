@@ -1,0 +1,91 @@
+.productImage {
+    width: 100%;
+    border-radius: 5px;
+    height: 45vh;
+}
+
+.productName {
+    margin-left: 20px;
+}
+
+.ratingStars {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.ratingContainer {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ratingAmountContainer {
+    font-size: 12px;
+    padding: 3px;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.productAll {
+    display: flex;
+    justify-content: space-around;
+}
+
+.productDescribeContainer {
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+    max-height: 450px;
+    overflow-y: auto;
+    background-color: rgb(9, 9, 32);
+}
+
+.ratingAndName {
+    margin-left: 3.9%;
+}
+
+.buttonBuy {
+    width: 55%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(250, 184, 62);
+    color: white;
+    cursor: pointer;
+}
+
+.productContainer p {
+    font-weight: 600;
+
+}
+
+.productImageDevices {
+    width: 38%;
+}
+
+.devices {
+    color: orange;
+}
+
+.date {
+    color: orange;
+}
+
+.compatibleDevices {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.releaseDate {
+    margin-bottom: 20px;
+}
+
+.productWrapper {
+    background-image: url(./Img/productBackground.jpeg);
+    background-size: 100%;
+    padding-top: 70px;
+    color: white;
+}
+.productElements{
+    margin-bottom: 70px;
+}

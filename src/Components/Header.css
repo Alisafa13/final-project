@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.headerContainer {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: rgb(46, 43, 43);
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.categories,
+.basket,
+.signIn {
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.home {
+    margin-right: auto;
+}
+
+.categories2 {
+    margin-left: auto;
+}
+
+.search {
+    width: 100%;
+    height: 24px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+}
+
+.categories1 {
+    background-color: rgb(46, 43, 43);
+    color: white;
+    border: 1px solid black;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-right: 10px;
+    border-top: 0;
+    padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    width: 15%;
+    margin-left: 18%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.profileElements {
+    background-color: rgb(46, 43, 43);
+    color: white;
+    border: 1px solid black;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-right: 10px;
+    border-top: 0;
+    padding: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    width: 15%;
+    margin-left: 85%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.categories1.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.categories1.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.profileElements.visible2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.profileElements.hidden2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.signIn,
+.basket,
+.home,
+.categories2 {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.home {
+    position: relative;
+    right: 60px;
+}
+
+.categories2 {
+    position: relative;
+    right: 100px;
+}
+
+.categories1 p {
+    cursor: pointer;
+}
+
+.categories1 p:hover {
+    color: rgb(250, 180, 49);
+}
+
+.profile {
+    width: 30px;
+    border-radius: 50%;
+    border: 0;
+    margin-left: 20px;
+}
+
+.basket {
+    width: 30px;
+    margin-left: 20px;
+}
+
+.wishList {
+    width: 30px;
+}
+
+.nav-home {
+    background-color: green;
+    color: #fff;
+    color: blue;
+}
+
+.profileFullName {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.profileEmail {
+    text-align: center;
+}
+
+.profileSignOut {
+    width: 35%;
+    background-color: rgb(124, 129, 163);
+    color: white;
+    border-radius: 4px;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.profileSignOutContainer {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.profileSignIn {
+
+    background-color: rgb(124, 129, 163);
+    color: white;
+    border-radius: 4px;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.profileSignInContainer {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .headerContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100vw;
+    }
+
+    .logo {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .home,
+    .categories2 {
+
+        margin-top: 5px;
+    }
+
+    .home1 {
+        position: relative;
+        left: 95px;
+        top: 87px;
+    }
+
+    .categories2 {
+        position: relative;
+        top: 63.6px;
+        margin-right: 10px;
+    }
+
+    .categories1 {
+        width: 30%;
+        margin-top: 5px;
+    }
+
+    .signIn {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .wishList,
+    .basket,
+    .profile {
+        margin-top: 10px;
+    }
+
+    .categories1 p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .profileElements {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .profileElements p,
+    .profileElements button {
+        font-size: 14px;
+        text-align: center;
+    }
+    .signIn1{
+        position: relative;
+        bottom: 19px;
+        left: 50px;
+    }
+}

@@ -1,0 +1,49 @@
+.basketAll{
+    background-image: url(./Img/basketBackground.jpg);
+    background-size: 100%;
+    color: white;
+    min-height: 100vh;
+    max-height: 100%;
+}
+.basketContainer{
+    width: 90%;
+    padding: 70px;
+}
+.basketImage{
+    width: 200px;
+    height: 112.5px;
+}
+.basketItem{
+    display: flex;
+    justify-content: space-between;
+    width: 67.7%;
+    height: 140px;
+    padding-top: 10px;
+    padding-right: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    background-color: rgb(13, 2, 35);
+}
+.basketGameName{
+    color: white;
+}
+.emptyLibrary{
+    min-height: 90vh;
+    font-size: 18px;
+    font-weight: 600;
+}
+.libraryName{
+    margin-bottom: 20px;
+}
+.playButton{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 17%;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(15, 160, 223);
+    border: 0;
+    border-radius: 4px;
+    color: white;
+}
