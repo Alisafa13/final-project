@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/final-project/static/css/main.cb2cfd74.css",
+    "main.js": "/final-project/static/js/main.5ca4443b.js",
+    "static/media/backgroundImage1.png": "/final-project/static/media/backgroundImage1.c1539de1d7e3f04ca732.png",
+    "static/media/1333016.jpeg": "/final-project/static/media/1333016.4c2198dd4485def0661c.jpeg",
+    "static/media/swiperAdventure.jpg": "/final-project/static/media/swiperAdventure.f5cedaefbf0ee610f2bb.jpg",
+    "static/media/jpeg": "/final-project/static/media/18f99765f9d1eb319b904dafadba273d.428fded5cc1255c55023.jpeg",
+    "static/media/redDeadRedemption.jpg": "/final-project/static/media/redDeadRedemption.6ed28e94d15530762a09.jpg",
+    "static/media/GOW.jpg": "/final-project/static/media/GOW.ed3abc4c4ce2d3c3d58e.jpg",
+    "static/media/loginBackground.png": "/final-project/static/media/loginBackground.428a29f915d31ac4fb57.png",
+    "static/media/Playstation-Wallpapers.jpg": "/final-project/static/media/Playstation-Wallpapers.ed49b50e49d7dfb0745c.jpg",
+    "static/media/4749-1589910988-1340190085.webp": "/final-project/static/media/4749-1589910988-1340190085.5cc3bd6df037ff6877a6.webp",
+    "static/media/swiperShooter.jpg": "/final-project/static/media/swiperShooter.87c8de6e3212a78b9443.jpg",
+    "static/media/rocketLeague.jpg": "/final-project/static/media/rocketLeague.206953b0ce7444713ade.jpg",
+    "static/media/backgroundImage3j.jpg": "/final-project/static/media/backgroundImage3j.6659de0ae571c663b3c0.jpg",
+    "static/media/connectionBackground.jpg": "/final-project/static/media/connectionBackground.4c80d16f89a1374978bb.jpg",
+    "static/media/basketBackground.jpg": "/final-project/static/media/basketBackground.9c699dba11fefdf8b058.jpg",
+    "static/media/productBackground.jpeg": "/final-project/static/media/productBackground.51cc4088883824899f21.jpeg",
+    "static/media/pay.png": "/final-project/static/media/pay.9a4ad357874c69a3b56e.png",
+    "static/media/wishlistbackground.jpg": "/final-project/static/media/wishlistbackground.80ef24400d3f8a3de006.jpg",
+    "static/media/logoLemon.jpg": "/final-project/static/media/logoLemon.883a6d905756bc0840b4.jpg",
+    "static/media/profile-user.png": "/final-project/static/media/profile-user.c915bcabfc0398d9f567.png",
+    "static/media/wishlist.png": "/final-project/static/media/wishlist.f9fd9002053ec2a373d8.png",
+    "static/media/game-folder.png": "/final-project/static/media/game-folder.fa8596cfdb685afaab43.png",
+    "static/media/stars.png": "/final-project/static/media/stars.4c48fe49f5d7650958c9.png",
+    "index.html": "/final-project/index.html",
+    "main.cb2cfd74.css.map": "/final-project/static/css/main.cb2cfd74.css.map",
+    "main.5ca4443b.js.map": "/final-project/static/js/main.5ca4443b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb2cfd74.css",
+    "static/js/main.5ca4443b.js"
+  ]
+}
