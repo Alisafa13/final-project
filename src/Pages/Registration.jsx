@@ -8,7 +8,7 @@ const Registration = ({ onRegister, toggleForm }) => {
   const [password, setPassword] = useState('');
 
   const handleRegister = () => {
-    if (email && password && firstName && lastName) {
+    if (email.trim() !== "" && password.trim() !== "" && firstName.trim() !== "" && lastName.trim() !== "") {
       onRegister({ firstName, lastName, email, password });
       const userProfile = {
         firstName,

@@ -80,7 +80,12 @@ const MainPage = ({ addToWishlist, wishlist, userProfile, setUserProfile, signOu
   }, []);
 
   const addToSelectedGames = (game) => {
-    addToWishlist(game);
+    if(userProfile == null){
+      alert("Sign into your account!")
+    }
+    else{
+      addToWishlist(game);
+    }
   };
 
   return (

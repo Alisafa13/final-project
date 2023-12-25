@@ -143,6 +143,7 @@
     border-radius: 50%;
     border: 0;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .basket {
@@ -186,7 +187,7 @@
 }
 
 .profileSignIn {
-
+    width: 35%;
     background-color: rgb(124, 129, 163);
     color: white;
     border-radius: 4px;

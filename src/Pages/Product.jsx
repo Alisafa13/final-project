@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import "./Product.css";
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
@@ -8,7 +8,7 @@ import ratings from "./Img/stars.png";
 const Product = ({ library, userProfile, setUserProfile, signOut }) => {
   const { id } = useParams();
   const [gameDetails, setGameDetails] = useState(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const apiKey = '95336678600c435bb7608ce8dffbf3c2';
     const apiUrl = `https://api.rawg.io/api/games/${id}?key=${apiKey}`;
@@ -24,8 +24,12 @@ const Product = ({ library, userProfile, setUserProfile, signOut }) => {
   }, [id]);
 
   const handleShareButtonClick = () => {
-    if (gameDetails) {
+    if (gameDetails && userProfile != null) {
       localStorage.setItem('sharedGame', JSON.stringify(gameDetails));
+      navigate("/pay");
+    }
+    else{
+      alert("Sign into your account!")
     }
   };
 
@@ -55,11 +59,9 @@ const Product = ({ library, userProfile, setUserProfile, signOut }) => {
                   )}
                   <p className='releaseDate'>Release Date: <span className='date'>{gameDetails.released}</span></p>
                   {!library.some((item) => item.id === gameDetails.id) ? (
-                    <Link to="/pay">
                       <button className='buttonBuy' onClick={handleShareButtonClick}>
                         Buy
                       </button>
-                    </Link>
                   ) : (<Link to='/basket'><button className='buttonBuy'>Purchased</button></Link>)}
 
                 </div>
