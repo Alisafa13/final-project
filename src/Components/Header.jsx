@@ -17,7 +17,7 @@ const Header = ({ setSearchMyData, setCategory, id, userProfile, setUserProfile,
   }, []);
 
   useEffect(() => {
-    if (location.pathname === "/wishlist" || location.pathname === "/basket" || location.pathname === "/contact" || location.pathname === `/product/${id}`){
+    if (location.pathname === "/wishlist" || location.pathname === "/library" || location.pathname === "/contact" || location.pathname === `/product/${id}`){
       hideElements();
     } else {
       showElements();
@@ -89,7 +89,7 @@ const Header = ({ setSearchMyData, setCategory, id, userProfile, setUserProfile,
         </div>
         <div>
           <NavLink to="/wishlist" ><img className="wishList" src={wishList} alt="WishList" /></NavLink>
-          <NavLink to="/basket" ><img className="basket" src={gameFolder} alt="Basket" /></NavLink>
+          <NavLink to="/library" ><img className="basket" src={gameFolder} alt="Basket" /></NavLink>
           <img
             className="profile"
             src={profile}

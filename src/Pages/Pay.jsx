@@ -38,7 +38,7 @@ const Pay = ({ addLibrary }) => {
       const sharedGame = JSON.parse(localStorage.getItem('sharedGame'));
       addLibrary(sharedGame);
       alert('Payment processed!');
-      navigate("/basket");
+      navigate("/library");
     } else {
       alert('Wrong card number, cvc, or MM/YY value!');
     }

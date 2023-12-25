@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
-import "./Basket.css";
+import "./Library.css";
 
-const Basket = ({ library, userProfile, setUserProfile, signOut }) => {
+const Library = ({ library, userProfile, setUserProfile, signOut }) => {
   return (
     <div className='basketAll'>
       <Header userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut} />
@@ -30,4 +30,4 @@ const Basket = ({ library, userProfile, setUserProfile, signOut }) => {
   );
 };
 
-export default Basket;
+export default Library;

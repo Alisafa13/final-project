@@ -6,7 +6,7 @@ import MainPage from './Pages/MainPage';
 import Product from './Pages/Product';
 import WishList from './Pages/WishList';
 import Pay from './Pages/Pay';
-import Basket from './Pages/Basket';
+import Library from './Pages/Library';
 import Connection from './Pages/Connection';
 
 const App = () => {
@@ -73,7 +73,7 @@ const App = () => {
           element={<MainPage addToWishlist={addToWishlist} wishlist={wishlist} userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>}
         />
         <Route path="/pay" element={<Pay library={library} addLibrary={addLibrary} />} />
-        <Route path='/basket' element={<Basket library={library} userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>} />
+        <Route path='/library' element={<Library library={library} userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>} />
         <Route path="/contact" element={<Connection userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>}/>
       </Routes>
     </div>

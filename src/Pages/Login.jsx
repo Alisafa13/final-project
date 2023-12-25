@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import { Link } from 'react-router-dom';
-const Login = ({ registeredUsers, onLogin, toggleForm }) => {
+const Login = ({ onLogin, toggleForm }) => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -13,9 +13,8 @@ const Login = ({ registeredUsers, onLogin, toggleForm }) => {
       if (isUserValid) {
         navigate('/main');
       } else {
-        console.log('Invalid email or password.');
+        alert('Invalid email or password.');
       }
-      
       const userProfile = JSON.parse(localStorage.getItem('userProfile')) || null;
       localStorage.setItem("userProfile", JSON.stringify(userProfile));
     } else {
