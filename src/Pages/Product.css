@@ -89,3 +89,40 @@
 .productElements{
     margin-bottom: 70px;
 }
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .productDescribeContainer {
+        width: 90%; 
+        max-width: 90%; 
+        margin: 0 auto; 
+        max-height: none; 
+        text-align: center;
+    }
+    .productImage{
+        height: 20%;
+    }
+    .productAll {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .productImageDevices {
+        width: 90%; 
+        max-width: 90%; 
+        margin: 0 auto; 
+    }
+    
+    .buttonBuy {
+        width: 90%; 
+        height: 40px;
+        max-width: 90%; 
+        margin-top: 15px; 
+        margin-bottom: 20px;
+    }
+    .productElements{
+        padding-top: 10vh;
+    }
+    .buttonBuyContainer{
+        display: flex;
+        justify-content: center;
+    }
+}

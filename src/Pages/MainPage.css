@@ -1,221 +1,232 @@
 .all {
-    text-align: center;
-    padding-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    box-sizing: border-box;
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .gameContainer {
-    font-family: 'Open Sans', sans-serif;
-    border: 1px solid white;
-    width: 271px;
-    height: 328px;
-    margin: 10px;
-    border-radius: 5px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.5s;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid white;
+  width: 271px;
+  height: 328px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s;
 }
 
 .gameContainer:hover {
-    transform: scale(1.1);
-    box-shadow: 1px 1px 4px 4px rgb(125, 124, 124);
+  transform: scale(1.1);
+  box-shadow: 1px 1px 4px 4px rgb(125, 124, 124);
 }
 
 .img {
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
 }
 
 .wishlistButton {
-    width: 25px;
-    cursor: pointer;
+  width: 25px;
+  cursor: pointer;
 }
 
 .basketButton {
-    width: 34px;
+  width: 34px;
 }
 
 .wishListAndBasketcontainer {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .gamesWrapper {
-    width: 100%;
-    background-image: url(./Img/backgroundImage3j.jpg);
-    background-size: 100%;
-    padding-bottom: 40px;
+  width: 100%;
+  background-image: url(./Img/backgroundImage3j.jpg);
+  background-size: 100%;
+  padding-bottom: 40px;
 }
 
 .swiper {
-    margin-top: 54px;
-    width: 70%;
-    height: 80%;
+  margin-top: 54px;
+  width: 70%;
+  height: 80%;
 }
 
 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+.swiperContainer {
+  padding-top: 20px;
+  background-image: url(./Img/backgroundImage1.png);
+  padding-bottom: 20px;
+}
+
+.gameName {
+  margin-top: 3px;
+  font-weight: 700;
+}
+
+.genre {
+  color: rgb(207, 207, 99);
+}
+
+.price {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.mySwiperShooter {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiperShooter .swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgb(8, 8, 37);
+}
+
+.mySwiperShooter .swiper-slide .swiperShooterImage {
+  max-width: 100%;
+  max-height: 300px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.mySwiperShooter .swiper-slide p {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.swiperShooterContainer {
+  background-image: url(./Img/swiperShooter.jpg);
+  background-size: 100%;
+  padding-top: 4vh;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 5vh;
+}
+
+.shooterGames {
+  color: rgb(239, 234, 252);
+}
+.gameNotFound{
+  margin-top: 90px;
+  margin-bottom: 90px;
+  color: white;
+}
+.mySwiperAdventure {
+  width: 240px;
+  height: 320px;
+}
+
+.mySwiperAdventure .swiper-slide {
+  position: relative;
+  border-radius: 18px;
+}
+
+.mySwiperAdventure .swiper-slide .swiperAdventureImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.mySwiperAdventure .swiper-slide a {
+  display: block;
+  height: 100%;
+}
+
+.swiperAdventureContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 20px;
+  background-image: url(./Img/swiperAdventure.jpg);
+  background-size: cover;
+  color: rgb(230, 231, 251);
+  font-weight: 500;
+}
+
+.swiperAdventureAbout {
+  width: 50%;
+  padding: 20px;
+}
+
+.swiperAdventureAbout p {
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .mainAll {
+    width: 100%;
+  }
+  .mySwiperAdventure{
+    display: none;
+  }
+  .swiperAdventureAbout{
+    text-align: center;
+    width: 90%;
+  }
+  .swiperContainer {
+    width: 100vw;
+    padding-top: 30vh;
+  }
+
+  .swiper {
+    margin-top: 20px;
+    width: 80%;
+    height: 10%;
+  }
+
+  .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.swiper-slide img {
+  .swiper-slide img {
     display: block;
     width: 100%;
-    height: 520px;
-    object-fit: cover;
-}
-
-.swiperContainer {
-    padding-top: 20px;
-    background-image: url(./Img/backgroundImage1.png);
-    padding-bottom: 20px;
-}
-.gameName{
-    margin-top: 3px;
-    font-weight: 700;
-}
-.genre{
-    color: rgb(207, 207, 99);
-}
-.price{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.mySwiperShooter {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .mySwiperShooter .swiper-slide {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 60vh;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background-color: rgb(8, 8, 37);
-  }
-  
-  .mySwiperShooter .swiper-slide .swiperShooterImage {
-    max-width: 100%;
-    max-height: 300px; 
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px; 
-  }
-  
-  .mySwiperShooter .swiper-slide p {
-    margin-top: 10px;
-    margin-bottom: 40px;
-    font-size: 14px;
-    font-weight: bold;
-    color: white; 
-  }
-  .swiperShooterContainer{
-    background-image: url(./Img/swiperShooter.jpg);
-    background-size: 100%;
-    padding-top: 4vh;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 5vh;
-  }
-  .shooterGames{
-    color: rgb(239, 234, 252);
-  }
-  .mySwiperAdventure {
-    width: 240px;
     height: 320px;
-  }
-  
-  .mySwiperAdventure .swiper-slide {
-    position: relative;
-    border-radius: 18px;
-  }
-  
-  .mySwiperAdventure .swiper-slide .swiperAdventureImage {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    border-radius: 18px;
   }
-  
-  .mySwiperAdventure .swiper-slide a {
-    display: block;
-    height: 100%;
+  .mySwiperAdventureContainer{
+    display: none;
   }
-  
-  .swiperAdventureContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 20px; 
-    background-image: url(./Img/swiperAdventure.jpg);
-    background-size: cover; 
-    color: rgb(230, 231, 251);
-    font-weight: 500;
-  }
-  
-  .swiperAdventureAbout {
-    width: 50%;
-    padding: 20px; 
-  }
-  
-  .swiperAdventureAbout p {
-    margin-bottom: 15px;
-  }
-  @media only screen and (min-width: 300px) and (max-width: 600px) {
-    .mainAll {
-      width: 100%;
-    }
-
-    .mySwiperAdventure {
-      width: 70%;
-      max-width: 250px;
-      margin: 0 auto;
-      height: 300px;
-    }
-  
-    .mySwiperAdventure .swiper-slide .swiperAdventureImage {
-      height: 100%;
-      border-radius: 0;
-    }
-  
-    .swiperAdventureContainer {
-      flex-direction: column;
-      padding: 20px;
-      text-align: center;
-    }
-  
-    .swiperAdventureAbout {
-      width: 100%;
-      padding: 10px;
-    }
-  
-    .swiperContainer {
-      width: 100vw;
-      padding-top: 50vh;
-    }
-    
-    
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-    }
-  }
+}

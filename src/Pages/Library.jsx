@@ -5,7 +5,7 @@ import "./Library.css";
 
 const Library = ({ library, userProfile, setUserProfile, signOut }) => {
   return (
-    <div className='basketAll'>
+    <div className='libraryAll'>
       <Header userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut} />
       <div className='basketContainer'>
         <h1 className='libraryName'>Library</h1>

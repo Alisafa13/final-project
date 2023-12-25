@@ -62,3 +62,44 @@
 .cvc, .mY{
     width: 166px;
 }
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .payContainer {
+    flex-direction: column-reverse; 
+    width: 100%;
+    padding: 10px;
+  }
+
+  .payLeftContainer {
+    width: 100%;
+  }
+
+  .cvc, .mY {
+    width: 100%; 
+    max-width: none;
+  }
+  .cardNumber{
+    width: 100%; 
+    max-width: 382px;
+  }
+  .enterCardInformation {
+    margin-bottom: 15px; 
+  }
+
+  .orderAmount {
+    margin-top: 15px; 
+  }
+
+  .payImage {
+    display: none; 
+  }
+
+  .payOrRefuse {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+  }
+
+  .payOrRefuse button {
+    width: 100px; 
+  }
+}

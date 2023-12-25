@@ -59,6 +59,9 @@
     text-decoration: none;
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
+    .wishListAll{
+     background-image: url(./Img/mobileWishlist.jpg);
+    }
     .listItem {
       width: 90%; 
       flex-direction: column; 
@@ -80,7 +83,7 @@
     }
     
     .wishlist-container{
-        margin-top: 26vh;
+        margin-top: 10vh;
     }
     .wishListImage{
         width: 130px;

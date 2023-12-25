@@ -117,7 +117,7 @@ const MainPage = ({ addToWishlist, wishlist, userProfile, setUserProfile, signOu
       </div>
       <div className='gamesWrapper'>
         <div className='all'>
-          {resultData.map((game, index) => (
+          {resultData.length > 0 ? (resultData.map((game, index) => (
             <div className='gameContainer' key={index}>
               <Link to={`/product/${game.id}`}>
                 <img className="img" src={game.background_image} alt={game.name} />
@@ -137,7 +137,7 @@ const MainPage = ({ addToWishlist, wishlist, userProfile, setUserProfile, signOu
                 </Link>
               </div>
             </div>
-          ))}
+          ))) : (<h1 className="gameNotFound" color='white'>Game not found!</h1>)}
         </div>
       </div>
       <div className='swiperShooterContainer'>
@@ -184,7 +184,7 @@ const MainPage = ({ addToWishlist, wishlist, userProfile, setUserProfile, signOu
           <p>In the realm of gaming, skill meets entertainment, and players find themselves at the intersection of strategy, creativity, and pure enjoyment, making each gaming session a unique and captivating experience.</p>
           <p>Whether you're a casual gamer seeking relaxation or a competitive player hungry for challenges, games offer a dynamic playground where imagination and skill collide, creating memorable moments and forging lasting connections.</p>
         </div>
-        <div>
+        <div className='mySwiperAdventureContainer'>
         <Swiper
         effect={'cards'}
         grabCursor={true}

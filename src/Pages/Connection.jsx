@@ -37,7 +37,7 @@ const Connection = ({ userProfile, setUserProfile, signOut}) => {
                         <br />
                         <label htmlFor="">
                             <p>Letter</p>
-                            <textarea name="" id="" cols="30" rows="10" required></textarea>
+                            <textarea className="contactTextArea" name="" id="" cols="30" rows="10" required></textarea>
                         </label>
                         <br />
                         <button className='contactSubmit'>Submit</button>

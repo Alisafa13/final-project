@@ -56,7 +56,10 @@ const Header = ({ setSearchMyData, setCategory, id, userProfile, setUserProfile,
     let categories = document.querySelector(".categories2");
     search.style.display = "none";
     categories.style.display = "none";
-    document.querySelector(".signIn").classList.add("signIn1");
+    document.querySelector(".home").classList.add("home2");
+    document.querySelector(".signIn").classList.add("signIn2");
+    document.querySelector(".headerContainer").classList.add("headerContainer3");
+    document.querySelector(".wishlistLibraryProfileContainer").classList.add("wishlistLibraryProfileContainer3");
   }
 
   const showElements = () => {
@@ -65,6 +68,8 @@ const Header = ({ setSearchMyData, setCategory, id, userProfile, setUserProfile,
     search.style.display = "block";
     categories.style.display = "block";
     document.querySelector(".home").classList.add("home1");
+    document.querySelector(".headerContainer").classList.add("headerContainer2");
+    document.querySelector(".wishlistLibraryProfileContainer").classList.add("wishlistLibraryProfileContainer2");
   }
 
   return (
@@ -87,7 +92,7 @@ const Header = ({ setSearchMyData, setCategory, id, userProfile, setUserProfile,
         <div>
           <NavLink to="/login" className='signIn'>Log in/Register</NavLink>
         </div>
-        <div>
+        <div className='wishlistLibraryProfileContainer'>
           <NavLink to="/wishlist" ><img className="wishList" src={wishList} alt="WishList" /></NavLink>
           <NavLink to="/library" ><img className="basket" src={gameFolder} alt="Basket" /></NavLink>
           <img

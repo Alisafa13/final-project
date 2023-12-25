@@ -59,7 +59,7 @@ const Registration = ({ onRegister, toggleForm }) => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
-          className="input"
+          className="input registerEmailInput"
           required
         />
         <label className="label registrationPassword">Password</label>
@@ -68,7 +68,7 @@ const Registration = ({ onRegister, toggleForm }) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Enter your password"
-          className="input"
+          className="input registerPasswordInput"
           required
         />
         <button  type="submit" className="button">

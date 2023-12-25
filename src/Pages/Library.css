@@ -1,4 +1,4 @@
-.basketAll{
+.libraryAll{
     background-image: url(./Img/basketBackground.jpg);
     background-size: 100%;
     color: white;
@@ -46,4 +46,35 @@
     border: 0;
     border-radius: 4px;
     color: white;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .basketContainer {
+        padding: 26vh 20px 20px 5%; 
+    }
+
+    .basketItem {
+        width: 100%; 
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .basketImage{
+        width: 50%;
+        height: 80%;
+    }
+
+    .playButton {
+        padding-bottom: 25px;
+        padding-top: 10px;
+        width: 60%; 
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    .basketGameName{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
 }

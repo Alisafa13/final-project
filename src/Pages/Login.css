@@ -118,3 +118,30 @@
   .registrationFirstName, .registrationLastName{
     color: white;
   }
+  @media only screen and (min-width: 300px) and (max-width: 600px) {
+    .input {
+      width: 100%;
+      max-width: none; 
+    }
+    .firstAndLastNameContainer {
+      flex-direction: column;
+    }
+  
+    .firstName,
+    .lastName {
+      width: 100%;
+      margin-right: 0; 
+    }
+    .registrationEmail, .registrationFirstName, .registrationLastName, .registrationPassword{
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    .firstName, .lastName, .registerEmailInput, .registerPasswordInput{
+      margin-bottom: 5px;
+      height: 30px;
+    }
+    .button{
+      margin-top: 5px;
+    }
+  }
+  

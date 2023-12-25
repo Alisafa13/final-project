@@ -59,9 +59,10 @@ const Product = ({ library, userProfile, setUserProfile, signOut }) => {
                   )}
                   <p className='releaseDate'>Release Date: <span className='date'>{gameDetails.released}</span></p>
                   {!library.some((item) => item.id === gameDetails.id) ? (
-                      <button className='buttonBuy' onClick={handleShareButtonClick}>
+                      <div className='buttonBuyContainer'><button className='buttonBuy' onClick={handleShareButtonClick}>
                         Buy
                       </button>
+                      </div>
                   ) : (<Link to='/basket'><button className='buttonBuy'>Purchased</button></Link>)}
 
                 </div>

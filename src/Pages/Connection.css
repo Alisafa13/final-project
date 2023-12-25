@@ -69,3 +69,34 @@
     border: 0;
     cursor: pointer;
 }
+textarea{
+ resize: none;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .connectionContainer {
+      width: 100%;
+      padding: 10vh 10px 10px 10px;
+    }
+  
+    .contactInformation {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .formContainer input,
+    .formContainer textarea {
+      width: 100%;
+      right: 0;
+    }
+  
+    .contactSubmit {
+      right: 0;
+    }
+    label p{
+        margin-left: 20px;
+    }
+  }
