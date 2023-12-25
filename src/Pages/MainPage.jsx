@@ -18,7 +18,7 @@ import photo4 from "./Img/GOW.jpg"
 import photo5 from "./Img/redDeadRedemption.jpg"
 import photo6 from "./Img/rocketLeague.jpg";
 
-const MainPage = ({ addToWishlist, wishlist }) => {
+const MainPage = ({ addToWishlist, wishlist, userProfile, setUserProfile, signOut }) => {
   const [searchMyData, setSearchMyData] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [resultData, setResultData] = useState([]);
@@ -85,7 +85,7 @@ const MainPage = ({ addToWishlist, wishlist }) => {
 
   return (
     <div className='mainAll'>
-      <Header setSearchMyData={setSearchMyData} setCategory={setSelectedCategory} />
+      <Header setSearchMyData={setSearchMyData} setCategory={setSelectedCategory} userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>
       <div className='swiperContainer'>
         {searchMyData.trim() === "" && (
           <Swiper

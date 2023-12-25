@@ -3,7 +3,7 @@ import Header from '../Components/Header';
 import "./WishList.css";
 import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom';
-const WishList = ({ wishlist, removeFromWishlist }) => {
+const WishList = ({ wishlist, removeFromWishlist, userProfile, setUserProfile, signOut }) => {
     const handleRemoveFromWishlist = (game) => {
         removeFromWishlist(game);
     };
@@ -11,7 +11,7 @@ const WishList = ({ wishlist, removeFromWishlist }) => {
     return (
         <div className='wishListAll'>
         <div className='wishListContainer'>
-            <Header />
+            <Header userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>
             <div className="wishlist-container">
                 <h1 className='wishListName'>Wishlist</h1>
                 {wishlist.length === 0 ? (

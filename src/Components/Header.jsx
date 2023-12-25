@@ -6,10 +6,9 @@ import wishList from "./Img/wishlist.png"
 import "./Header.css";
 import { NavLink, Link, useLocation } from "react-router-dom";
 
-const Header = ({ setSearchMyData, setCategory, id }) => {
+const Header = ({ setSearchMyData, setCategory, id, userProfile, setUserProfile, signOut }) => {
   const [isCategoriesVisible, setCategoriesVisible] = useState(false);
   const [isProfileVisible, setProfileVisible] = useState(false);
-  const [userProfile, setUserProfile] = useState(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -50,10 +49,7 @@ const Header = ({ setSearchMyData, setCategory, id }) => {
     setSearchMyData(e.target.value.toLowerCase());
   };
 
-  const signOut = () => {
-    setUserProfile(null); 
-  
-  }
+
 
   const hideElements = () => {
     let search = document.querySelector(".search");

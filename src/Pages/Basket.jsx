@@ -3,10 +3,10 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import "./Basket.css";
 
-const Basket = ({ library }) => {
+const Basket = ({ library, userProfile, setUserProfile, signOut }) => {
   return (
     <div className='basketAll'>
-      <Header />
+      <Header userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut} />
       <div className='basketContainer'>
         <h1 className='libraryName'>Library</h1>
         {library.length === 0 ? (

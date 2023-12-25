@@ -13,6 +13,7 @@ const App = () => {
   const [registeredUsers, setRegisteredUsers] = useState([]);
   const [wishlist, setWishlist] = useState([]);
   const [library, setLibrary] = useState([]);
+  const [userProfile, setUserProfile] = useState(null);
 
   useEffect(() => {
     const savedUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
@@ -43,7 +44,10 @@ const App = () => {
     setLibrary((prevBasket) => [...prevBasket, payGame]);
     console.log('Payment processed!');
   };
-
+  const signOut = () => {
+    setUserProfile(null); 
+  
+  }
   
   return (
     <div>
@@ -58,19 +62,19 @@ const App = () => {
         />
         <Route
           path="/wishlist"
-          element={<WishList wishlist={wishlist} removeFromWishlist={removeFromWishlist} />}
+          element={<WishList wishlist={wishlist} removeFromWishlist={removeFromWishlist} userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>}
         />
         <Route
           path="/product/:id"
-          element={<Product addToWishlist={addToWishlist} addLibrary={addLibrary} library={library} />}
+          element={<Product addToWishlist={addToWishlist} addLibrary={addLibrary} library={library} userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>}
         />
         <Route
           path="*"
-          element={<MainPage addToWishlist={addToWishlist} wishlist={wishlist} />}
+          element={<MainPage addToWishlist={addToWishlist} wishlist={wishlist} userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>}
         />
         <Route path="/pay" element={<Pay library={library} addLibrary={addLibrary} />} />
-        <Route path='/basket' element={<Basket library={library} />} />
-        <Route path="/contact" element={<Connection/>}/>
+        <Route path='/basket' element={<Basket library={library} userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>} />
+        <Route path="/contact" element={<Connection userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>}/>
       </Routes>
     </div>
   );

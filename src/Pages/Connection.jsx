@@ -2,10 +2,10 @@ import React from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import "./Connection.css"
-const Connection = () => {
+const Connection = ({ userProfile, setUserProfile, signOut}) => {
     return (
         <div className='connectionAll'>
-            <Header />
+            <Header userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>
             <div className='connectionContainer'>
                 <h1 className='contact'>Contact</h1>
                 <div className='contactInformation'>

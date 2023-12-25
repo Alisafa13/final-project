@@ -5,7 +5,7 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import ratings from "./Img/stars.png";
 
-const Product = ({ library }) => {
+const Product = ({ library, userProfile, setUserProfile, signOut }) => {
   const { id } = useParams();
   const [gameDetails, setGameDetails] = useState(null);
 
@@ -36,7 +36,7 @@ const Product = ({ library }) => {
   return (
     <div className='productWrapper'>
       <div className='productContainer'>
-        <Header id={id} />
+        <Header id={id} userProfile={userProfile} setUserProfile={setUserProfile} signOut={signOut}/>
         <div className='productElements'>
           <div className='ratingAndName'>
             <h1 className='productName'>{gameDetails.name}</h1>
