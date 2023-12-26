@@ -5,15 +5,15 @@
     min-height: 100vh;
     max-height: 100%;
 }
-.basketContainer{
+.libraryContainer{
     width: 90%;
     padding: 70px;
 }
-.basketImage{
+.libraryImage{
     width: 200px;
     height: 112.5px;
 }
-.basketItem{
+.libraryItem{
     display: flex;
     justify-content: space-between;
     width: 67.7%;
@@ -25,7 +25,7 @@
     padding-left: 10px;
     background-color: rgb(13, 2, 35);
 }
-.basketGameName{
+.libraryGameName{
     color: white;
 }
 .emptyLibrary{
@@ -48,11 +48,11 @@
     color: white;
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-    .basketContainer {
+    .libraryContainer {
         padding: 26vh 20px 20px 5%; 
     }
 
-    .basketItem {
+    .libraryItem {
         width: 100%; 
         height: auto;
         flex-direction: column;
@@ -60,7 +60,7 @@
         padding: 10px;
     }
 
-    .basketImage{
+    .libraryImage{
         width: 50%;
         height: 80%;
     }
@@ -72,7 +72,7 @@
         height: 20px;
         margin-bottom: 10px;
     }
-    .basketGameName{
+    .libraryGameName{
         margin-top: 10px;
         margin-bottom: 10px;
         font-size: 14px;

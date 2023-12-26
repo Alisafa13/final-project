@@ -279,9 +279,9 @@
     }
 
     .profileElements {
-        width: 100%;
-        margin-top: 10px;
-        margin-left: 60%;
+        width: 40%;
+        font-size: 14px;
+        margin-left: 50%;
     }
 
     .profileElements p,
@@ -304,6 +304,7 @@
     }
     .profileSignIn{
         width: 60px;
+        font-size: 8px;
     }
 }
 @media only screen and (min-width: 401px) and (max-width: 600px) {
@@ -385,9 +386,9 @@
     }
 
     .profileElements {
-        width: 100%;
-        margin-top: 10px;
-        margin-left: 60%;
+        width: 40%;
+        font-size: 14px;
+        margin-left: 50%;
     }
 
     .profileElements p,
@@ -412,4 +413,103 @@
         width: 60px;
     }
    
+}
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .headerContainer {
+        flex-direction: column;
+        align-items: center;
+        height: 165px;
+        padding: 20px; 
+    }
+
+    .logo {
+        position: absolute;
+        right: 90%;
+        bottom: 70%;
+        width: 50px; 
+        height: 50px; 
+    }
+
+    .home,
+    .categories2 {
+        margin-top: 15px;
+    }
+
+    .home1 {
+        position: relative;
+        left: 20vw;
+        top: 57px;
+    }
+
+    .categories2 {
+        position: relative;
+        bottom: 0;
+        top: 22px;
+        margin-right: 20vw;
+    }
+
+    .categories1 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .signIn {
+        margin-top: 15px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        position: relative;
+        bottom: 60px;
+    }
+
+    .wishList,
+    .basket,
+    .profile {
+        margin-top: 15px;
+    }
+
+    .categories1 p {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .profileElements {
+        width: 100%;
+        font-size: 16px;
+        margin-left: 0;
+        margin-bottom: 80px;
+    }
+
+    .profileElements p,
+    .profileElements button {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .signIn2 {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    .wishlistLibraryProfileContainer2,
+    .wishlistLibraryProfileContainer3 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
+        bottom: 40px;
+    }
+
+    .profileSignIn {
+        width: 100px;
+    }
 }

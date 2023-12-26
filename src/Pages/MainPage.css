@@ -230,3 +230,34 @@
     display: none;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .swiper {
+    margin-top: 20px;
+    width: 80%;
+    height: 10%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+  }
+  .swiperContainer{
+    padding-top: 30vh;
+  }
+  .mySwiperAdventureContainer {
+    display: none;
+  }
+  .swiperAdventureAbout{
+    text-align: center;
+  }
+}

@@ -6,25 +6,30 @@ const Registration = ({ onRegister, toggleForm }) => {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
-  const handleRegister = () => {
-    if (email.trim() !== "" && password.trim() !== "" && firstName.trim() !== "" && lastName.trim() !== "") {
-      onRegister({ firstName, lastName, email, password });
-      const userProfile = {
-        firstName,
-        lastName,
-        email,
-      };
-      localStorage.setItem('userProfile', JSON.stringify(userProfile));
-  
-      setEmail('');
-      setPassword('');
-      setFirstName('');
-      setLastName('');
-    } else {
-      console.log('Please enter a valid first name, last name, email, and password.');
-    }
-  };
+    const handleRegister = () => {
+      if (
+        email.trim() !== "" &&
+        password.trim() !== "" &&
+        firstName.trim() !== "" &&
+        lastName.trim() !== "" &&
+        password.length >= 8
+      ) {
+        onRegister({ firstName, lastName, email, password });
+        const userProfile = {
+          firstName,
+          lastName,
+          email,
+        };
+        localStorage.setItem('userProfile', JSON.stringify(userProfile));
+    
+        setEmail('');
+        setPassword('');
+        setFirstName('');
+        setLastName('');
+      } else {
+        console.log('Please enter a valid first name, last name, email, and password (minimum 8 characters).');
+      }
+    };
 
   return (
     <div className='registrationContainer'>
