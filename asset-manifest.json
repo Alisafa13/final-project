@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/final-project/static/css/main.07185d4a.css",
-    "main.js": "/final-project/static/js/main.2af39b7b.js",
+    "main.css": "/final-project/static/css/main.a7ac9778.css",
+    "main.js": "/final-project/static/js/main.43136836.js",
     "static/media/backgroundImage1.png": "/final-project/static/media/backgroundImage1.c1539de1d7e3f04ca732.png",
     "static/media/1333016.jpeg": "/final-project/static/media/1333016.4c2198dd4485def0661c.jpeg",
     "static/media/swiperAdventure.jpg": "/final-project/static/media/swiperAdventure.f5cedaefbf0ee610f2bb.jpg",
@@ -26,11 +26,11 @@
     "static/media/game-folder.png": "/final-project/static/media/game-folder.fa8596cfdb685afaab43.png",
     "static/media/stars.png": "/final-project/static/media/stars.4c48fe49f5d7650958c9.png",
     "index.html": "/final-project/index.html",
-    "main.07185d4a.css.map": "/final-project/static/css/main.07185d4a.css.map",
-    "main.2af39b7b.js.map": "/final-project/static/js/main.2af39b7b.js.map"
+    "main.a7ac9778.css.map": "/final-project/static/css/main.a7ac9778.css.map",
+    "main.43136836.js.map": "/final-project/static/js/main.43136836.js.map"
   },
   "entrypoints": [
-    "static/css/main.07185d4a.css",
-    "static/js/main.2af39b7b.js"
+    "static/css/main.a7ac9778.css",
+    "static/js/main.43136836.js"
   ]
 }
